@@ -1,0 +1,474 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>About Me Tailwind POC</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="font-nunito overflow-x-hidden">
+    <div
+      class="h-1/2 lg:h-screen bg-gradient-to-t from-slate-500 relative overflow-hidden"
+    >
+      <!--Start Header Section -->
+      <header>
+        <nav class="fixed w-full top-0 bg-white z-10">
+          <div
+            class="container mx-auto py-5 md:px-0 lg:px-16 flex items-center justify-between"
+          >
+            <div class="logo ml-5 md:ml-0 sm:ml-5 flex items-center text-2xl font-bold">
+              <img class="w-8" src="./img/logo.png" alt="logo" />about<span
+                class="text-yellow-400"
+                >Me</span
+              >
+            </div>
+            <ul class="hidden font-bold md:flex space-x-10">
+              <li class="hover:text-yellow-400"><a alt="Home" href="#">Home</a></li>
+              <li class="hover:text-yellow-400"><a alt="About" href="#about">About</a></li>
+              <li class="hover:text-yellow-400">
+                <a alt="Projects" href="#projects">Projects</a>
+              </li>
+              <li class="hover:text-yellow-400">
+                <a alt="Skills" href="#skills">Skills</a>
+              </li>
+              <li class="hover:text-yellow-400"><a alt="Awards" href="#award">Awards</a></li>
+            </ul>
+            <ul class="hidden font-bold md:flex space-x-5">
+              <li>
+                <img
+                  src="./img/facebook-icon.png"
+                  alt="facebook"
+                  class="w-6 animate__animated animate__bounceIn"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/email.png"
+                  alt="email"
+                  class="w-6 animate__animated animate__bounceIn"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/linkedin-icon.png"
+                  alt="linkedin"
+                  class="w-6 animate__animated animate__bounceIn"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/twitter-icon.png"
+                  alt="twitter"
+                  class="w-6 animate__animated animate__bounceIn"
+                />
+              </li>
+            </ul>
+            <div id="hamburger" class="space-y-1 mr-5 md:hidden cursor-pointer z-20">
+              <div class="w-6 h-0.5 bg-black"></div>
+              <div class="w-6 h-0.5 bg-black"></div>
+              <div class="w-6 h-0.5 bg-black"></div>
+            </div>
+            <ul
+              id="menu"
+              class="hidden bg-indigo-400 w-full absolute left-0 top-0 p-10 space-y-10 text-white text-center"
+            >
+              <li><a class="hLink" alt="Home" href="#">Home</a></li>
+              <li><a class="hLink" alt="About" href="#about">About</a></li>
+              <li><a class="hLink" alt="Projects" href="#projects">Projects</a></li>
+              <li><a class="hLink" alt="Skills" href="#skills">Skills</a></li>
+              <li><a class="hLink" alt="Awards" href="#award">Awards</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--End Header Section -->
+      <!--Start Banner Section-->
+      <div>
+        <img
+          src="./img/women.png"
+          alt="women"
+          class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover animate__animated animate__jackInTheBox"
+        />
+        <div
+          class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
+        ></div>
+        <div
+          class="absolute top-1/3 left-5 font-bold text-xl sm:left-10 sm:text-4xl md:left-20 md:text-6xl lg:left-5 xl:left-32 xl:text-6xl"
+        >
+          <span class="text-yellow-400">Frontend</span>
+          <p id="text" class="text-pink-900"></p>
+        </div>
+        <div
+          class="hidden lg:flex gap-5 rounded-md shadow-lg flex-col absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3"
+        >
+          <h1 class="text-3xl font-bold text-indigo-900">
+            Hi, I'm Sangeeta Panwar
+          </h1>
+          <p class="to-gray-400">
+            Frontend Developer with over 5 years of experience working with different Technologies
+            to deliver exceptional customer experience.Adept at contributing to a highly collaborative work environment,
+            finding solutions, and determining customer satisfaction.
+          </p>
+          <a
+            class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
+            href="#"
+            alt="Hire Button"
+            >Hire Me</a
+          >
+        </div>
+      </div>
+      <!--End Banner Section-->
+    </div>
+    <!--Start About Section-->
+    <div id="about">
+      <div
+        class="container mx-auto px-16 py-20 flex flex-col-reverse lg:flex-row items-center gap-20"
+      >
+        <div class="left-side">
+          <img
+            class="w-96"
+            src="./img/about.png"
+            alt="about image"
+          />
+        </div>
+        <div
+          class="my-auto flex flex-col gap-3 animate__animated animate__lightSpeedInRight animate__delay-2s"
+        >
+          <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+          <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+          <h1 class="text-3xl font-medium dark:text-white">
+            Better Experience
+          </h1>
+          <p class="text-gray-400">
+            I design and build Responsive Websites. I'm also a multi-disciplinary
+            maker with over 5 years of experiences in wide range of design
+            disciplines.
+          </p>
+          <h2 class="text-gray-400 font-medium">HTML,CSS,Javascript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">React,Nextjs,Angular</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">Tailwind,Bootstrap,Material UI</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End About Section-->
+
+    <!-- Start Work & Project Section -->
+    <div id="projects" class="pt-0 pb-16 px-16 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">Services</h1>
+          <h1 class="text-3xl dark:text-white">Works & Projects</h1>
+          <p class="w-1/2 text-center text-gray-400">
+            My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
+          </p>
+        </div>
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:mt-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/wpcarey.png" alt="wpcarey" class="h-full" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:mt-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/chexsystem.png" alt="chexsystems" class="h-full" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:mt-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/hogan.png" alt="Hogan Lovells" class="h-full" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:mt-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/hogan.png" alt="Hogan Lovells" class="h-full" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:mt-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/wpcarey.png" alt="wpcarey" class="h-full" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:mt-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/chexsystem.png" alt="chexsystems" class="h-full" />
+          </div>
+          <!-- card -->
+        </div>
+      </div>
+    </div>
+    <!-- End Work & Project Section -->
+
+    <!--Start Skills Section-->
+    <div id="skills" class="container mx-auto px-4 md:px-12">
+      <div class="flex flex-col gap-3 items-center overflow-hidden">
+        <h1 class="text-indigo-600 font-bold">Technologies</h1>
+        <h1 class="text-3xl dark:text-white">Key Skills</h1>
+        <p class="w-1/2 text-center text-gray-400">
+          A result oriented professional with 5 year of experience in field of Software Development with Microsoft Technologies:  
+          HTML5,CSS3,SAAS,Jquery,Javascript,Bootstrap,Materal UI,Sitecore SXA UI,React JS,NextJs,Tailwind,Angular,RUF Framework,Git,Zeplin,Adobe XD
+        </p>
+      </div>
+      <div class="p-5 sm:p-0 lg:mx-72 sm:mx-24 flex flex-wrap justify-between">
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 sm:w-2/4 rounded-lg md:mt-10 m-1">
+          <img src="./img/html5.png" alt="Html5" class="w-32 sm:w-full"/>
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 sm:w-2/4 rounded-lg md:mt-10 m-1">
+          <img src="./img/css3.png" alt="CSS3" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/javascript.webp" alt="javascript" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/jquery.png" alt="jquery" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/next.png" alt="nextjs" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/react.png" alt="reactjs" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/tailwind.png" alt="Tailwind" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/angular.png" alt="Angular" class="w-32 sm:w-full" />
+        </div>
+       <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/bootstrap.png" alt="Bootstrap" class="w-32 sm:w-full" />
+        </div>
+       <!-- card --> 
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/material.png" alt="Material UI" class="w-32 sm:w-full" />
+        </div>
+       <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/sass.png" alt="Sass" class="w-32 sm:w-full" />
+        </div>
+       <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/typescript.png" alt="Typescript" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/git.webp" alt="Git" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/zeplin.png" alt="Zeplin" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+        <div class="md:w-5/12 lg:w-1/5 rounded-lg md:mt-10 m-1">
+          <img src="./img/xd.png" alt="Xd" class="w-32 sm:w-full" />
+        </div>
+        <!-- card -->
+      </div>
+    </div>
+    <!--End Skills Section-->
+
+    <!--Start Award & Recognitions Section-->
+    <div id="award" class="container my-16 mx-auto px-4 md:px-12">
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">Badge</h1>
+          <h1 class="text-3xl dark:text-white">Award & Recognitions</h1>
+          <p class="w-1/2 text-center text-gray-400">
+            Winning an award at work or during your Hard Work seem like a pleasant pat on the back at the time.I have received lot of Awards in this Quarter
+          </p>
+        </div>
+        <div class="flex flex-wrap -mx-1 lg:-mx-4">
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 sm:mt-10 sm:px-4 lg:mt-10 lg:px-4 lg:w-1/3">
+          <article class="overflow-hidden rounded-lg shadow-lg">
+            <a href="#">
+              <img
+                alt="Award"
+                class="block h-auto w-full"
+                src="./img/highfive-award.png"
+              />
+            </a>
+
+            <header
+              class="flex items-center justify-between leading-tight p-2 md:p-4"
+            >
+              <h1 class="text-lg">
+                <a alt="Award" class="no-underline hover:underline text-black" href="#">
+                  Star of the Month Award
+                </a>
+              </h1>
+            </header>
+          </article>
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 sm:mt-10 sm:px-4 lg:mt-10 lg:px-4 lg:w-1/3">
+          <article class="overflow-hidden rounded-lg shadow-lg">
+            <a href="#">
+              <img
+                alt="Award"
+                class="block h-auto w-full"
+                src="./img/highfive-award.png"
+              />
+            </a>
+
+            <header
+              class="flex items-center justify-between leading-tight p-2 md:p-4"
+            >
+              <h1 class="text-lg">
+                <a class="no-underline hover:underline text-black" alt="Award" href="#">
+                  Spotlight Award
+                </a>
+              </h1>
+            </header>
+          </article>
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 sm:mt-10 sm:px-4 lg:mt-10 lg:px-4 lg:w-1/3">
+          <article class="overflow-hidden rounded-lg shadow-lg">
+            <a href="#">
+              <img
+                alt="Award"
+                class="block h-auto w-full"
+                src="./img/highfive-award.png"
+              />
+            </a>
+
+            <header
+              class="flex items-center justify-between leading-tight p-2 md:p-4"
+            >
+              <h1 class="text-lg">
+                <a class="no-underline hover:underline text-black" alt="Award" href="#">
+                  High Five Award
+                </a>
+              </h1>
+            </header>
+          </article>
+        </div>
+        <!-- END Column -->
+      </div>
+    </div>
+    <!--End Award & Recognitions Section-->
+
+   <!--Start Client's Feedback Section-->
+    <div class="container mx-auto w-full overflow-hidden relative">
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-indigo-600 font-bold">Commentary</h1>
+        <h1 class="text-3xl dark:text-white">Client's feedback</h1>
+        <p class="w-1/2 text-center text-gray-400">
+          Client always appreciates my efforts and my work speaks when client appreciates with excellent feedback and mentions.         </p>
+      </div>
+      <div class="carousel-items flex items-center justify-center animate-carousel w-fit">
+          <div class="carousel-focus hover:transition-all hover:duration-800 hover:transform-hover:scale-110 flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg w-72">
+              <span class="text-yellow-400 font-bold text-xl mb-3">MSSP</span>
+              <img class="h-16 w-16 rounded-full shadow-2xl" src="./img/user.png" alt="MSSP">
+              <p class="mt-3 text-gray-600 text-center">"Received fantastic feedback from MSSP Client..
+                Sangeeta – "Sangeeta did a great job working with Matt to make MSSP brand compliant and making it “sparkle.” She has been crucial in making MSSP as usable as it is.
+                !"</p>
+          </div>
+
+          <div class="carousel-focus hover:transition-all hover:duration-800 hover:transform-hover:scale-110 flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg w-72">
+              <p class="text-yellow-400 font-bold text-xl mb-3">chexsystems</p>
+              <img class="h-16 w-16 rounded-full shadow-2xl" src="./img/user.png" alt="ChexSystem">
+              <p class="mt-3 text-gray-600 text-center">"Got Pat on the back Award For working on MSSP and ChexSystem and playing different roles as per project requirement.Got High Five award for extending valuable support in FIS ChexSystem project.!"</p>
+          </div>
+
+          <div class="carousel-focus hover:transition-all hover:duration-800 hover:transform-hover:scale-110 flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg w-72">
+              <p class="text-yellow-400 font-bold text-xl mb-3">WP carey</p>
+              <img class="h-16 w-16 rounded-full shadow-2xl" src="./img/user.png" alt="wpcarey">
+              <p class="mt-3 text-gray-600 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam!"</p>
+          </div>
+
+          <div class="carousel-focus hover:transition-all hover:duration-800 hover:transform-hover:scale-110 flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg w-72">
+              <p class="text-yellow-400 font-bold text-xl mb-3">Hogan Lovells</p>
+              <img class="h-16 w-16 rounded-full shadow-2xl" src="./img/user.png" alt="Hogan Lovells">
+              <p class="mt-3 text-gray-600 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam!"</p>
+          </div>
+
+          <div class="carousel-focus hover:transition-all hover:duration-800 hover:transform-hover:scale-110 flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg w-72">
+              <p class="text-yellow-400 font-bold text-xl mb-3">MSSP</p>
+              <img class="h-16 w-16 rounded-full shadow-2xl" src="./img/user.png" alt="MSSP">
+              <p class="mt-3 text-gray-600 text-center">"Received Star of the Month Award For making MSSP Applications' interface look more beautiful. Client always appreciates my efforts and my work speaks when client appreciates with excellent feedback and mentions!"</p>
+          </div>
+          
+          <div class="carousel-focus hover:transition-all hover:duration-800 hover:transform-hover:scale-110 flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg w-72">
+              <p class="text-yellow-400 font-bold text-xl mb-3">chexsystems</p>
+              <img class="h-16  w-16 rounded-full shadow-2xl" src="./img/user.png" alt="chexsystems">
+              <p class="mt-3 text-gray-600 text-center">"Got Pat on the back Award For working on MSSP and ChexSystem and playing different roles as per project requirement.Got High Five award for extending valuable support in FIS ChexSystem project.!"</p>
+          </div>
+
+          <div class="carousel-focus hover:transition-all hover:duration-800 hover:transform-hover:scale-110 flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg w-72">
+              <p class="text-yellow-400 font-bold text-xl mb-3">WP Carey </p>
+              <img class="h-16 w-16 rounded-full shadow-2xl" src="./img/user.png" alt="wpcarey">
+              <p class="mt-3 text-gray-600 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam!"</p>
+          </div>
+
+          <div class="carousel-focus hover:transition-all hover:duration-800 hover:transform-hover:scale-110 flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg w-72">
+              <p class="text-yellow-400 font-bold text-xl mb-3">Hogan Lovells</p>
+              <img class="h-16 w-16 rounded-full shadow-2xl" src="./img/user.png" alt="Hogan Lovells">
+              <p class="mt-3 text-gray-600 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam!"</p>
+          </div>
+      </div>
+  </div>
+  <!--End Client's Feedback Section-->
+
+  <!-- Start footer -->
+    <div class="w-full bg-gray-800">
+      <div
+        class="container mx-auto px-16 py-5 flex items-center justify-between"
+      >
+        <div class="flex items-center text-2xl font-bold">
+          <img class="w-8" src="./img/logo.png" alt="logo" />about<span
+            class="text-yellow-400"
+            >Me</span
+          >
+        </div>
+        <span class="hidden md:block font-medium text-white"
+          >© 2023 aboutMe. Design with ♥️ by Sangeeta Panwar.</span
+        >
+        <div class="flex gap-2">
+          <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End footer -->
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+  </body>
+</html>
