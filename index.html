@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script>document.documentElement.classList.add('js')</script>
   </head>
   <body class="font-nunito overflow-x-hidden">
     <div
@@ -174,7 +175,7 @@
       <div class="container mx-auto">
         <div class="flex flex-col gap-3 items-center">
           <h1 class="text-indigo-600 font-bold">Services</h1>
-          <h1 class="text-3xl dark:text-white">Works & Projects</h1>
+          <h1 data-text="Works & Projects" class="text-3xl dark:text-white relative overflow-hidden pb-8 before:content-[attr(data-text)attr(data-text)] before:underline before:underline-offset-8 before:decoration-wavy before:decoration-yellow-400 before:absolute before:whitespace-nowrap before:text-transparent before:animate-wave">Works & Projects</h1>
           <p class="w-1/2 text-center text-gray-400">
             My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
           </p>
@@ -226,7 +227,7 @@
     <div id="skills" class="container mx-auto px-4 md:px-12">
       <div class="flex flex-col gap-3 items-center overflow-hidden">
         <h1 class="text-indigo-600 font-bold">Technologies</h1>
-        <h1 class="text-3xl dark:text-white">Key Skills</h1>
+        <h1 data-text="Key Skills" class="text-3xl dark:text-white relative overflow-hidden pb-8 before:content-[attr(data-text)attr(data-text)] before:underline before:underline-offset-8 before:decoration-wavy before:decoration-yellow-400 before:absolute before:whitespace-nowrap before:text-transparent before:animate-wave">Key Skills</h1>
         <p class="w-1/2 text-center text-gray-400">
           A result oriented professional with 5 year of experience in field of Software Development with Microsoft Technologies:  
           HTML5,CSS3,SAAS,Jquery,Javascript,Bootstrap,Materal UI,Sitecore SXA UI,React JS,NextJs,Tailwind,Angular,RUF Framework,Git,Zeplin,Adobe XD
@@ -302,7 +303,7 @@
     <div id="award" class="container my-16 mx-auto px-4 md:px-12">
         <div class="flex flex-col gap-3 items-center">
           <h1 class="text-indigo-600 font-bold">Badge</h1>
-          <h1 class="text-3xl dark:text-white">Award & Recognitions</h1>
+          <h1 data-text="Award & Recognitions" class="text-3xl dark:text-white relative overflow-hidden pb-8 before:content-[attr(data-text)attr(data-text)] before:underline before:underline-offset-8 before:decoration-wavy before:decoration-yellow-400 before:absolute before:whitespace-nowrap before:text-transparent before:animate-wave">Award & Recognitions</h1>
           <p class="w-1/2 text-center text-gray-400">
             Winning an award at work or during your Hard Work seem like a pleasant pat on the back at the time.I have received lot of Awards in this Quarter
           </p>
@@ -387,7 +388,7 @@
     <div class="container mx-auto w-full overflow-hidden relative">
       <div class="flex flex-col gap-3 items-center">
         <h1 class="text-indigo-600 font-bold">Commentary</h1>
-        <h1 class="text-3xl dark:text-white">Client's feedback</h1>
+        <h1 data-text="Client's feedback" class="text-3xl dark:text-white relative overflow-hidden pb-8 before:content-[attr(data-text)attr(data-text)] before:underline before:underline-offset-8 before:decoration-wavy before:decoration-yellow-400 before:absolute before:whitespace-nowrap before:text-transparent before:animate-wave">Client's feedback</h1>
         <p class="w-1/2 text-center text-gray-400">
           Client always appreciates my efforts and my work speaks when client appreciates with excellent feedback and mentions.         </p>
       </div>
@@ -470,5 +471,6 @@
     <!-- End footer -->
     <script src="./app.js"></script>
     <script src="./autotyping.js"></script>
+    <script src="https://unpkg.com/taos@1.0.3/dist/taos.js"></script>
   </body>
 </html>
